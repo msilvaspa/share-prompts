@@ -26,7 +26,9 @@ const Form: React.FC<FormProps> = ({
         imagination run wild with and AI-powered platform.
       </p>
       <form
-        onSubmit={handleSubmit}
+        onSubmit={(e) => {
+          handleSubmit(e);
+        }}
         className="mt-10 w-full max-w-2xl flex flex-col gap-7 glassmorphism"
       >
         <label>

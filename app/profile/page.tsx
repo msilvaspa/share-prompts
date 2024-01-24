@@ -7,9 +7,9 @@ import Profile from "@components/Profile";
 
 const MyProfile = () => {
   const router = useRouter();
-  const { data: session } = useSession();
+  const { data: session }: any = useSession();
 
-  const [myPosts, setMyPosts] = useState([]);
+  const [myPosts, setMyPosts] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -22,11 +22,11 @@ const MyProfile = () => {
     if (session?.user!._id) fetchPosts();
   }, [session?.user!._id]);
 
-  const handleEdit = (post) => {
+  const handleEdit = (post: any) => {
     router.push(`/update-prompt?id=${post._id}`);
   };
 
-  const handleDelete = async (post) => {
+  const handleDelete = async (post: any) => {
     const hasConfirmed = confirm(
       "Are you sure you want to delete this prompt?"
     );

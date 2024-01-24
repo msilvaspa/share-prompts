@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from "react";
 import PromptCard from "./PromptCard";
 
-const PrompCardList = ({ data, handleTagClick }) => {
+const PrompCardList = ({ data, handleTagClick }: any) => {
   return (
     <div className="mt-16 prompt_layout">
-      {data.map((post) => {
+      {data.map((post: any) => {
         return (
           <PromptCard key={post._id} post={post} handleTagClick={() => {}} />
         );
@@ -18,7 +18,7 @@ const Feed = () => {
   const [searchText, setSearchText] = useState("");
   const [posts, setPosts] = useState([]);
 
-  const handleSearchChange = (e) => {};
+  const handleSearchChange = (e: any) => {};
 
   useEffect(() => {
     (async () => {

@@ -10,13 +10,13 @@ type PromptCardProps = {
   handleDelete: any;
 };
 
-const PromptCard: React.FC<PromptCardProps> = ({
+const PromptCard: React.FC<any> = ({
   post,
   handleTagClick,
   handleEdit,
   handleDelete,
 }) => {
-  const { data: session } = useSession();
+  const { data: session }: any = useSession();
   const pathName = usePathname();
   const router = useRouter();
   const [copied, setCopied] = useState("");
