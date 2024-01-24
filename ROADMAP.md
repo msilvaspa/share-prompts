@@ -1,0 +1,9 @@
+- [x] Create Prompts
+- [x] Edit Prompts
+- [x] Delete Prompts
+- [ ] Search prompts
+- [ ] Click on tag to search by tag
+- [ ] Tags counter
+- [ ] View other profiles
+- [ ] Like prompts
+- [ ] Prompts likes counter
